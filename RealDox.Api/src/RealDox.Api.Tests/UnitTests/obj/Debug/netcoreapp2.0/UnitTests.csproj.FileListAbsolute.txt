@@ -1,0 +1,13 @@
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.deps.json
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.runtimeconfig.json
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.runtimeconfig.dev.json
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.dll
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.pdb
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.csproj.CoreCompileInputs.cache
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.AssemblyInfoInputs.cache
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.AssemblyInfo.cs
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.dll
+c:\Users\Alex\Documents\VSCode\RealDox.Api\src\RealDox.Api.Tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.pdb
