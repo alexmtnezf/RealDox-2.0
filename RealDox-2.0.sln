@@ -1,0 +1,62 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealDox.Core", "RealDox.Core", "{7C4E4F31-A7E0-45A8-A31F-CF2DBD4A435D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD046E53-26AC-4E5F-9715-F7748CC018BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealDox.Core", "RealDox.Core\src\RealDox.Core\RealDox.Core.csproj", "{119CC489-84E0-49D6-B764-5940D0A3EF9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealDox.Api", "RealDox.Api", "{9EF9578F-848E-4BB9-8093-D1509D49956E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7F28AD58-4BFB-43A6-B6C1-77B5395A20B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealDox.Api", "RealDox.Api\src\RealDox.Api\RealDox.Api.csproj", "{3ED1953C-914C-40CE-83C4-87004136D14B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Debug|x64.ActiveCfg = Debug|x64
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Debug|x64.Build.0 = Debug|x64
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Debug|x86.ActiveCfg = Debug|x86
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Debug|x86.Build.0 = Debug|x86
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Release|x64.ActiveCfg = Release|x64
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Release|x64.Build.0 = Release|x64
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Release|x86.ActiveCfg = Release|x86
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F}.Release|x86.Build.0 = Release|x86
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Debug|x64.ActiveCfg = Debug|x64
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Debug|x64.Build.0 = Debug|x64
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Debug|x86.ActiveCfg = Debug|x86
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Debug|x86.Build.0 = Debug|x86
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Release|x64.ActiveCfg = Release|x64
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Release|x64.Build.0 = Release|x64
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Release|x86.ActiveCfg = Release|x86
+		{3ED1953C-914C-40CE-83C4-87004136D14B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD046E53-26AC-4E5F-9715-F7748CC018BE} = {7C4E4F31-A7E0-45A8-A31F-CF2DBD4A435D}
+		{119CC489-84E0-49D6-B764-5940D0A3EF9F} = {AD046E53-26AC-4E5F-9715-F7748CC018BE}
+		{7F28AD58-4BFB-43A6-B6C1-77B5395A20B4} = {9EF9578F-848E-4BB9-8093-D1509D49956E}
+		{3ED1953C-914C-40CE-83C4-87004136D14B} = {7F28AD58-4BFB-43A6-B6C1-77B5395A20B4}
+	EndGlobalSection
+EndGlobal
