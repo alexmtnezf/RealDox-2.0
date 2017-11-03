@@ -1,8 +1,0 @@
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\bin\Debug\netstandard2.0\RealDox.Core.deps.json
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\bin\Debug\netstandard2.0\RealDox.Core.dll
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\bin\Debug\netstandard2.0\RealDox.Core.pdb
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\obj\Debug\netstandard2.0\RealDox.Core.csproj.CoreCompileInputs.cache
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\obj\Debug\netstandard2.0\RealDox.Core.AssemblyInfoInputs.cache
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\obj\Debug\netstandard2.0\RealDox.Core.AssemblyInfo.cs
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\obj\Debug\netstandard2.0\RealDox.Core.dll
-C:\Users\Alex\Documents\VSCode\RealDox.Core\src\RealDox.Core\obj\Debug\netstandard2.0\RealDox.Core.pdb
