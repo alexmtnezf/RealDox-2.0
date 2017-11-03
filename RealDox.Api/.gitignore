@@ -309,3 +309,6 @@ OpenCover/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+./src/RealDox.Api/bin/*
+./src/RealDox.Api/obj/
