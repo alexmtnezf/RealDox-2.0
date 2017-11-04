@@ -1,3 +1,5 @@
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RealDox.Core.Models;
@@ -57,6 +59,29 @@ namespace RealDox.Core.Data.IdentityProviders
                 .HasForeignKey(e => e.UserId)
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Cascade);
+        }
+
+        public override int SaveChanges()
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChanges();
+        }
+
+        public override int SaveChanges(bool acceptAllChangesOnSuccess)
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChanges(acceptAllChangesOnSuccess);
+        }
+
+        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChangesAsync(acceptAllChangesOnSuccess,cancellationToken);
+        }
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChangesAsync(cancellationToken);
         }
         #endregion
     }

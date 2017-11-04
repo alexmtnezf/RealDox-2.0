@@ -1,4 +1,6 @@
 using System.Data.Common;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RealDox.Core.Models;
 
@@ -16,10 +18,11 @@ namespace RealDox.Core.Data
         public DbSet<TodoItem> TodoItems { get; set; }
         public DbSet<Author> Authors { get; set; }
 
-
+        #region Overriding methods
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.EnableAutoHistory();
+            //Enable auto history functionality
+            modelBuilder.EnableAutoHistory(null);
             base.OnModelCreating(modelBuilder);
         }
 
@@ -27,7 +30,7 @@ namespace RealDox.Core.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                string ConnectionString = @"Server=(localdb)\\mssqllocaldb;Database=RealDox-Test;Trusted_Connection=True;MultipleActiveResultSets=true";
+                string ConnectionString = @"Server=(localdb)\\mssqllocaldb;Database=Test;Trusted_Connection=True;MultipleActiveResultSets=true";
                 optionsBuilder.UseSqlServer(ConnectionString,
                 optionns =>
                     {
@@ -38,6 +41,30 @@ namespace RealDox.Core.Data
             }
 
         }
+        
+        public override int SaveChanges()
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChanges();
+        }
+
+        public override int SaveChanges(bool acceptAllChangesOnSuccess)
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChanges(acceptAllChangesOnSuccess);
+        }
+
+        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChangesAsync(acceptAllChangesOnSuccess,cancellationToken);
+        }
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
+        {
+            this.EnsureAutoHistory();
+            return base.SaveChangesAsync(cancellationToken);
+        }
+        #endregion
 
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RealDox.Api.Filters;
 using RealDox.Api.Serialization;
 using RealDox.Core.Data;
 using RealDox.Core.Interfaces;
@@ -12,10 +13,10 @@ using RealDox.Core.Models;
 
 namespace RealDox.Api.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Produces("application/json")]
     [Route("api/[controller]")]
-    
+    [ValidateModel]
     public class TodoController : Controller
     {
         private readonly IToDoRepository _toDoRepository;

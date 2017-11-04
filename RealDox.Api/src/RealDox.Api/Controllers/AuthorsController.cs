@@ -10,7 +10,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace RealDox.Api.Controllers
 {   
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     public class AuthorsController : Controller
     {

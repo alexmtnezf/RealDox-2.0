@@ -84,8 +84,8 @@ namespace RealDox.Api
 
             var defaultPolicy = new AuthorizationPolicyBuilder(new[]
             {
-                /*IdentityConstants.ApplicationScheme,
-                IdentityConstants.ExternalScheme,*/
+                IdentityConstants.ApplicationScheme,
+                IdentityConstants.ExternalScheme,
                 JwtBearerDefaults.AuthenticationScheme
             })
             .RequireAuthenticatedUser()
@@ -94,7 +94,7 @@ namespace RealDox.Api
 
             services.AddMvc(options =>
             {
-                //options.Filters.Add(new AuthorizeFilter(defaultPolicy));
+                
                 if (jwtOptions.UseCookie)
                 {
                     options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
@@ -103,7 +103,7 @@ namespace RealDox.Api
                 #region snippet_SSL 
                 var skipSSL = Configuration.GetValue<bool>("LocalTest:skipSSL");
                 // requires using Microsoft.AspNetCore.Mvc;
-
+                options.Filters.Add(new AuthorizeFilter(defaultPolicy));
                 // Set LocalTest:skipSSL to true to skip SSL requrement in 
                 // debug mode. This is useful when not using Visual Studio.
                 if (__hostingEnv.IsDevelopment() && !skipSSL)
@@ -264,9 +264,7 @@ namespace RealDox.Api
             app.UseAuthentication(); // Add Identity middleware for authenticate before you access secure resources.
             #endregion
 
-
-
-            app.UseResponseCompression();
+            app.UseResponseCompression(); //Compress the response for optimization
             app.UseMvcWithDefaultRoute(); // Add MVC middleware to the request pipeline.
 
 

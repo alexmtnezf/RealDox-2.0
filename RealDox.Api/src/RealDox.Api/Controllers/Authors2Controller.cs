@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace RealDox.Api.Controllers
 {
-    
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ValidateModel]
     public class Authors2Controller : Controller
