@@ -303,11 +303,12 @@ __pycache__/
 
 # OpenCover UI analysis results
 OpenCover/
-./RealDox.Core/src/RealDox.Core/bin/
-./RealDox.Core/src/RealDox.Core/obj/
+/RealDox.Core/src/RealDox.Core/bin/
+/RealDox.Core/src/RealDox.Core/obj/
 
-/RealDox.Api/src/RealDox.Api/bin/*
-/RealDox.Api/src/RealDox.Api/obj/*
+/RealDox.Api/src/RealDox.Api/bin/
+/RealDox.Api/src/RealDox.Api/obj/
+/RealDox.Api/src/RealDox.Api/Data/
 
 .vscode/*
 !.vscode/settings.json

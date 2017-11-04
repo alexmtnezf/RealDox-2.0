@@ -310,5 +310,6 @@ OpenCover/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-./src/RealDox.Api/bin/*
-./src/RealDox.Api/obj/
+./RealDox.Api/bin/*
+./RealDox.Api/obj/*
+./RealDox.Api/Data/Migrations/*
